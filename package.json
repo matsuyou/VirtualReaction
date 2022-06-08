@@ -1,0 +1,28 @@
+{
+  "name": "VirtualReaction",
+  "version": "1.0.0",
+  "homepage": "./",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matsuyou/VirtualReaction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matsuyou/VirtualReaction/issues"
+  },
+  "homepage": "https://github.com/matsuyou/VirtualReaction#readme",
+  "dependencies": {
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41"
+  }
+}
