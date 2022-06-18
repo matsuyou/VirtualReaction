@@ -653,6 +653,19 @@ export class LAppModel extends CubismUserModel {
   }
 
   /**
+  * Virtiual Reaction Additional Code
+  * 引数で指定した表情モーションをセットする
+  **/
+  public setNumExpression(expressionNumber: number): void {
+    if (this._expressions.getSize() < expressionNumber) {
+      return;
+    }
+    const name: string = this._expressions._keyValues[expressionNumber].first;
+    this.setExpression(name);
+    return;
+  }
+
+  /**
    * ランダムに選ばれた表情モーションをセットする
    */
   public setRandomExpression(): void {

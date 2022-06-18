@@ -215,4 +215,15 @@ export class LAppLive2DManager {
     LAppPal.printMessage('Motion Finished:');
     console.log(self);
   };
+
+  /**
+  * Virtiual Reaction Additional Code
+  * guiからの命令に応じて処理
+  **/
+  public onListened2(no: number): void {
+    for (let i = 0; i < this._models.getSize(); i++) {
+      this._models.at(i).setNumExpression(no);
+    }
+  }
 }
+

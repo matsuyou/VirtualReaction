@@ -300,6 +300,15 @@ export class LAppDelegate {
   _mouseY: number; // マウスY座標
   _isEnd: boolean; // APP終了しているか
   _textureManager: LAppTextureManager; // テクスチャマネージャー
+
+  /**
+  * Virtiual Reaction Additional Code
+  * 
+  **/
+  public static onEventListened(no: number): void {
+    const live2DManager: LAppLive2DManager = LAppLive2DManager.getInstance();
+    live2DManager.onListened2(no);
+  }
 }
 
 /**

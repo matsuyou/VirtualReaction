@@ -1,14 +1,4 @@
 /**
- * @description Controllerの値変化に応じて処理
- */
-window.addEventListener("message", function(event: any) {
-	if(event.origin == "http://localhost:8000"){
-	    console.log(event.data);
-	}
-},false);
-
-
-/**
  * Copyright(c) Live2D Inc. All rights reserved.
  *
  * Use of this source code is governed by the Live2D Open Software license
@@ -43,3 +33,13 @@ window.onresize = () => {
     LAppDelegate.getInstance().onResize();
   }
 };
+
+/**
+ * Virtiual Reaction Additional Code
+ * guiからの命令に応じて処理
+ **/
+window.addEventListener("message", function(event: any) {
+	if(event.origin == "http://localhost:8000"){
+    LAppDelegate.onEventListened(event.data);
+	}
+},false);
