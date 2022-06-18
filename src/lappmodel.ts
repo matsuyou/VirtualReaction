@@ -657,7 +657,7 @@ export class LAppModel extends CubismUserModel {
   * 引数で指定した表情モーションをセットする
   **/
   public setNumExpression(expressionNumber: number): void {
-    if (this._expressions.getSize() < expressionNumber) {
+    if (this._expressions.getSize() <= expressionNumber) {
       return;
     }
     const name: string = this._expressions._keyValues[expressionNumber].first;

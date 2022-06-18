@@ -39,8 +39,11 @@ function ValueInput(num) {
 /**
  * @description ボタン押下時の処理設定
  */
- const stop_button = document.getElementById('ReactionStop');
- if (stop_button != null) stop_button.onclick = WindowClose;
+ const stopButton = document.getElementById('ReactionStop');
+ if (stopButton != null) stopButton.onclick = WindowClose;
+
+ const button0 = document.getElementById('Reaction0');
+ if (button0 != null) button0.onclick = function() {ValueInput(0)}; 
  
  const button1 = document.getElementById('Reaction1');
  if (button1 != null) button1.onclick = function() {ValueInput(1)}; 
@@ -53,3 +56,6 @@ function ValueInput(num) {
  
  const button4 = document.getElementById('Reaction4');
  if (button4 != null) button4.onclick= function() {ValueInput(4)};
+
+ const changeButton = document.getElementById('ModelChange');
+ if (changeButton != null) changeButton.onclick= function() {ValueInput("change")};

@@ -303,11 +303,15 @@ export class LAppDelegate {
 
   /**
   * Virtiual Reaction Additional Code
-  * 
+  * イベントを受信したときに呼ばれる
   **/
-  public static onEventListened(no: number): void {
+  public static onEventListened(data: any): void {
     const live2DManager: LAppLive2DManager = LAppLive2DManager.getInstance();
-    live2DManager.onListened2(no);
+    if(data == "change"){
+      live2DManager.nextScene();
+    }else{
+      live2DManager.onListened(Number(data));
+    }
   }
 }
 
