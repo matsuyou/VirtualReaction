@@ -12,7 +12,8 @@ import { LogLevel } from '@framework/live2dcubismframework';
  */
 
 // Canvas width and height pixel values, or dynamic screen size ('auto').
-export const CanvasSize: { width: number; height: number } | 'auto' = 'auto';
+//export const CanvasSize: { width: number; height: number } | 'auto' = 'auto';
+export const CanvasSize: { width: number; height: number } | 'auto' = {width: 800,height: 800};/*Virtiual Reaction キャンバスサイズの固定*/
 
 // 画面
 export const ViewScale = 1.0;
@@ -33,7 +34,8 @@ export const ViewLogicalMaxTop = 2.0;
 export const ResourcesPath = '../Resources/';
 
 // モデルの後ろにある背景の画像ファイル
-export const BackImageName = 'back_class_normal.png';
+//export const BackImageName = 'back_class_normal.png';
+export const BackImageName = 'living01.png';
 
 // 歯車 /*Virtiual Reaction Comment Out Code*/
 //export const GearImageName = 'icon_gear.png';

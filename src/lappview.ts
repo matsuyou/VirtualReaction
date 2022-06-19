@@ -147,6 +147,8 @@ export class LAppView {
       initBackGroundTexture
     );
 
+    console.log(resourcesPath+ imageName+"です");
+
     // 歯車画像初期化  /*Virtiual Reaction Comment Out Code*/
     /*imageName = LAppDefine.GearImageName;
     const initGearTexture = (textureInfo: TextureInfo): void => {

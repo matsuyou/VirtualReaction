@@ -5,7 +5,7 @@ var subWin = null;
  * @description モデルウィンドウを開く
  */
  if(!subWin){
-	subWin =  window.open('http://localhost:8000/', 'model', 'top=0,left=0,width=400,height=400');
+	subWin =  window.open('http://localhost:8000/', 'model', 'top=0,left=0,width=700,height=300');
 }
 /**
  * @description controllerウィンドウとmodelウィンドウを閉じる
