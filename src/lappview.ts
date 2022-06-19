@@ -147,8 +147,8 @@ export class LAppView {
       initBackGroundTexture
     );
 
-    // 歯車画像初期化
-    imageName = LAppDefine.GearImageName;
+    // 歯車画像初期化  /*Virtiual Reaction Comment Out Code*/
+    /*imageName = LAppDefine.GearImageName;
     const initGearTexture = (textureInfo: TextureInfo): void => {
       const x = width - textureInfo.width * 0.5;
       const y = height - textureInfo.height * 0.5;
@@ -161,7 +161,7 @@ export class LAppView {
       resourcesPath + imageName,
       false,
       initGearTexture
-    );
+    );*/
 
     // シェーダーを作成
     if (this._programId == null) {
@@ -175,9 +175,11 @@ export class LAppView {
    * @param pointX スクリーンX座標
    * @param pointY スクリーンY座標
    */
+  
   public onTouchesBegan(pointX: number, pointY: number): void {
     this._touchManager.touchesBegan(pointX, pointY);
   }
+  
 
   /**
    * タッチしているときにポインタが動いたら呼ばれる。
@@ -220,10 +222,10 @@ export class LAppView {
       }
       live2DManager.onTap(x, y);
 
-      // 歯車にタップしたか
-      if (this._gear.isHit(pointX, pointY)) {
+      // 歯車にタップしたか   /*Virtiual Reaction Comment Out Code*/
+      /*if (this._gear.isHit(pointX, pointY)) {
         live2DManager.nextScene();
-      }
+      }*/
     }
   }
 
