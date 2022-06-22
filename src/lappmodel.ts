@@ -495,10 +495,11 @@ export class LAppModel extends CubismUserModel {
     this._model.addParameterValueById(this._idParamEyeBallX, this._dragX); // -1から1の値を加える
     this._model.addParameterValueById(this._idParamEyeBallY, this._dragY);
 
-    // 呼吸など
+    // 呼吸など  /*Virtiual Reaction Comment Out Code*/
+    /* 
     if (this._breath != null) {
       this._breath.updateParameters(this._model, deltaTimeSeconds);
-    }
+    }*/
 
     // 物理演算の設定
     if (this._physics != null) {
