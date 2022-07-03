@@ -5,7 +5,7 @@ var subWin = null;
  * @description モデルウィンドウを開く
  */
  if(!subWin){
-	subWin =  window.open('http://localhost:8000/', 'model', 'top=0,left=0,width=700,height=300');
+	subWin =  window.open('http://localhost:8000/', 'model', 'top=0,left=0,width=850,height=450');
 }
 /**
  * @description controllerウィンドウとmodelウィンドウを閉じる
@@ -32,8 +32,8 @@ var subWin = null;
 /**
  * @description ReactionValueの値を変更する
  */
-function ValueInput(num) {
-    win.ReactionValue = num;
+function ValueInput(str) {
+    win.ReactionValue = str;
 }
 
 /**
@@ -43,19 +43,26 @@ function ValueInput(num) {
  if (stopButton != null) stopButton.onclick = WindowClose;
 
  const button0 = document.getElementById('Reaction0');
- if (button0 != null) button0.onclick = function() {ValueInput(0)}; 
+ if (button0 != null) button0.onclick = function() {ValueInput('00')}; 
  
  const button1 = document.getElementById('Reaction1');
- if (button1 != null) button1.onclick = function() {ValueInput(1)}; 
+ if (button1 != null) button1.onclick = function() {ValueInput('01')}; 
  
  const button2 = document.getElementById('Reaction2');
- if (button2 != null) button2.onclick = function() {ValueInput(2)}; 
+ if (button2 != null) button2.onclick = function() {ValueInput('02')}; 
  
  const button3 = document.getElementById('Reaction3');
- if (button3 != null) button3.onclick = function() {ValueInput(3)};
+ if (button3 != null) button3.onclick = function() {ValueInput('03')};
  
  const button4 = document.getElementById('Reaction4');
- if (button4 != null) button4.onclick= function() {ValueInput(4)};
+ if (button4 != null) button4.onclick= function() {ValueInput('04')};
+
+ const button5 = document.getElementById('Submit');
+ if (button5 != null) button5.onclick= function() {
+    Scriptbox = document.getElementById('CommentScript');
+    value = "1" +  Scriptbox.value;
+    ValueInput(value);
+};
 
  const changeButton = document.getElementById('ModelChange');
- if (changeButton != null) changeButton.onclick= function() {ValueInput("change")};
+ if (changeButton != null) changeButton.onclick= function() {ValueInput('2.change')};

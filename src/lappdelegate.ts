@@ -305,12 +305,14 @@ export class LAppDelegate {
   * Virtiual Reaction Additional Code
   * イベントを受信したときに呼ばれる
   **/
-  public static onEventListened(data: any): void {
+  public static onEventListened(data: string): void {
     const live2DManager: LAppLive2DManager = LAppLive2DManager.getInstance();
-    if(data == "change"){
+    if(String(data).slice(0,1) == "0"){    //1文字目が0の場合、表情切替
+      live2DManager.onListened(Number(String(data))); 
+    }else if(String(data).slice(0,1) == "1"){    //1文字目が1の場合、コメント表示
+      document.getElementById("balloonScript").innerHTML = String(data).slice(1);
+    }else if(String(data).slice(0,1) == "2"){  //1文字目が2の場合、シーン切替
       live2DManager.nextScene();
-    }else{
-      live2DManager.onListened(Number(data));
     }
   }
 }
