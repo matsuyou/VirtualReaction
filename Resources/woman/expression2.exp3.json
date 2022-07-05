@@ -1,0 +1,20 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "ParamMouthOpenY",
+			"Value": 2,
+			"Blend": "Add"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"Value": 0,
+			"Blend": "Add"
+		},
+		{
+			"Id": "kirakira",
+			"Value": 1,
+			"Blend": "Add"
+		}
+	]
+}

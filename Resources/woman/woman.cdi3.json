@@ -1,0 +1,42 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉　出現"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "OK",
+			"GroupId": "",
+			"Name": "腕OK"
+		},
+		{
+			"Id": "kirakira",
+			"GroupId": "",
+			"Name": "きらきら"
+		},
+		{
+			"Id": "guruguru",
+			"GroupId": "",
+			"Name": "ぐるぐる"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": []
+}
