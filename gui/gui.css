@@ -1,0 +1,27 @@
+body {
+    background-color: #333;
+}
+
+.controller {
+    background-color: #333;
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+}
+
+
+input[type="text"] {
+    font-size: 30px; 
+    width: 30em; 
+}
+#Reaction0 { font-size: 50px; }
+#Reaction1 { font-size: 50px; }
+#Reaction2 { font-size: 50px; }
+#Reaction3 { font-size: 50px; }
+#Reaction4 { font-size: 50px; }
+#Reaction5 { font-size: 50px; }
+#ModelChange{ font-size: 45px; }
+#Submit{ font-size: 30px; }
+#ReactionStop{ font-size: 30px; }
