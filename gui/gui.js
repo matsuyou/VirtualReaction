@@ -5,7 +5,7 @@ var subWin = null;
  * @description モデルウィンドウを開く
  */
  if(!subWin){
-	subWin =  window.open('http://localhost:8000/', 'model', 'top=0,left=0,width=850,height=450');
+	subWin =  window.open('http://glacial-meadow-27403.herokuapp.com/', 'model', 'top=0,left=0,width=850,height=450');
 }
 /**
  * @description controllerウィンドウとmodelウィンドウを閉じる
@@ -24,7 +24,7 @@ var subWin = null;
  Object.defineProperty(win, "ReactionValue", {
     set(v){
         if(subWin != null){
-            subWin.postMessage(v,'http://localhost:8000/');
+            subWin.postMessage(v,'http://glacial-meadow-27403.herokuapp.com/');
             console.log("ReactionValue set!:"+v);
         }
     }
