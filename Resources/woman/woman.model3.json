@@ -1,0 +1,33 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "woman.moc3",
+		"Textures": [
+			"woman.1024/texture_00.png"
+		],
+		"DisplayInfo": "woman.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "通常",
+				"File": "expression1.exp3.json"
+			},
+			{
+				"Name": "笑顔",
+				"File": "expression2.exp3.json"
+			},
+			{
+				"Name": "驚き",
+				"File": "expression3.exp3.json"
+			},
+			{
+				"Name": "悲しみ",
+				"File": "expression4.exp3.json"
+			},
+			{
+				"Name": "OK",
+				"File": "expression5.exp3.json"
+			}
+		]
+	},
+	"HitAreas": []
+}
