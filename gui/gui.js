@@ -73,7 +73,7 @@ function ValueInput(str) {
  * 
  */
 function autoReaction() {    //ランダムに自動でリアクション
-    var random = Math.floor( Math.random() * 4 );
+    var random = Math.floor( Math.random() * 5 );
     if(random == 0){
         ValueInput("1【デモ中】へー");
         ValueInput("00");
@@ -97,7 +97,7 @@ var intervalId;
 if (autoButton != null) autoButton.onclick= function() {
     if (autoMode == false) {
         autoMode = true;
-        intervalId = setInterval(autoReaction, 5000);  //5秒ごとに自動リアクション
+        intervalId = setInterval(autoReaction, 4000);  //4秒ごとに自動リアクション
     }else if(autoMode == true) {
         autoMode = false;
         clearInterval(intervalId);  //自動リアクションの停止
