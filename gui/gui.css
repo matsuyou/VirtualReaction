@@ -13,15 +13,15 @@ body {
 
 
 input[type="text"] {
-    font-size: 30px; 
+    font-size: 28px; 
     width: 25em; 
 }
-#Reaction0 { font-size: 30px; }
-#Reaction1 { font-size: 30px; }
-#Reaction2 { font-size: 30px; }
-#Reaction3 { font-size: 30px; }
-#Reaction4 { font-size: 30px; }
-#Reaction5 { font-size: 30px; }
-#ModelChange{ font-size: 25px; }
-#Submit{ font-size: 25px; }
-#ReactionStop{ font-size: 25px; }
+#Reaction0 { font-size: 26px; }
+#Reaction1 { font-size: 26px; }
+#Reaction2 { font-size: 26px; }
+#Reaction3 { font-size: 26px; }
+#Reaction4 { font-size: 26px; }
+#Reaction5 { font-size: 26px; }
+#ModelChange{ font-size: 22px; }
+#Submit{ font-size: 22px; }
+#ReactionStop{ font-size: 22px; }
