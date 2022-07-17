@@ -66,3 +66,40 @@ function ValueInput(str) {
 
  const changeButton = document.getElementById('ModelChange');
  if (changeButton != null) changeButton.onclick= function() {ValueInput('2.change')};
+
+
+ /**
+ * @description 自動リアクションモード
+ * 
+ */
+function autoReaction() {    //ランダムに自動でリアクション
+    var random = Math.floor( Math.random() * 4 );
+    if(random == 0){
+        ValueInput("1【デモ中】へー");
+        ValueInput("00");
+    }else if(random == 1) {
+        ValueInput("1【デモ中】なるほど！");
+        ValueInput("01");
+    }else if(random == 2) {
+        ValueInput("1【デモ中】えーっ！");
+        ValueInput("02");
+    }else if(random == 3) {
+        ValueInput("1【デモ中】うーん……");
+        ValueInput("03");
+    }else if(random == 4) {
+        ValueInput("1【デモ中】いいね！");
+        ValueInput("04");
+    }
+}
+const autoButton = document.getElementById('AutoReaction');
+var autoMode = false;
+var intervalId;
+if (autoButton != null) autoButton.onclick= function() {
+    if (autoMode == false) {
+        autoMode = true;
+        intervalId = setInterval(autoReaction, 5000);  //5秒ごとに自動リアクション
+    }else if(autoMode == true) {
+        autoMode = false;
+        clearInterval(intervalId);  //自動リアクションの停止
+    }
+};
