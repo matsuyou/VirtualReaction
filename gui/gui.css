@@ -16,12 +16,12 @@ input[type="text"] {
     font-size: 30px; 
     width: 30em; 
 }
-#Reaction0 { font-size: 50px; }
-#Reaction1 { font-size: 50px; }
-#Reaction2 { font-size: 50px; }
-#Reaction3 { font-size: 50px; }
-#Reaction4 { font-size: 50px; }
-#Reaction5 { font-size: 50px; }
-#ModelChange{ font-size: 45px; }
-#Submit{ font-size: 30px; }
-#ReactionStop{ font-size: 30px; }
+#Reaction0 { font-size: 30px; }
+#Reaction1 { font-size: 30px; }
+#Reaction2 { font-size: 30px; }
+#Reaction3 { font-size: 30px; }
+#Reaction4 { font-size: 30px; }
+#Reaction5 { font-size: 30px; }
+#ModelChange{ font-size: 25px; }
+#Submit{ font-size: 25px; }
+#ReactionStop{ font-size: 25px; }
