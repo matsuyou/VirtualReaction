@@ -75,16 +75,16 @@ function ValueInput(str) {
 function autoReaction() {    //ランダムに自動でリアクション
     var random = Math.floor( Math.random() * 5 );
     if(random == 0){
-        ValueInput("1【デモ中】へー");
+        ValueInput("1【デモ中】リアクション例を紹介します");
         ValueInput("00");
     }else if(random == 1) {
-        ValueInput("1【デモ中】なるほど！");
+        ValueInput("1【デモ中】なるほど！！！");
         ValueInput("01");
     }else if(random == 2) {
         ValueInput("1【デモ中】えーっ！");
         ValueInput("02");
     }else if(random == 3) {
-        ValueInput("1【デモ中】うーん……");
+        ValueInput("1【デモ中】その発想はなかった……");
         ValueInput("03");
     }else if(random == 4) {
         ValueInput("1【デモ中】いいね！");
