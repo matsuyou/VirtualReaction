@@ -39,7 +39,7 @@ window.onresize = () => {
  * guiからの命令に応じて処理
  **/
 window.addEventListener("message", function(event: any) {
-	if(event.origin == "https://glacial-meadow-27403.herokuapp.com"){
+	if(event.origin == "https://werid-air.main.jp"){
     LAppDelegate.onEventListened(event.data);
 	}
 },false);

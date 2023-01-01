@@ -5,7 +5,7 @@ var subWin = null;
  * @description モデルウィンドウを開く
  */
  if(!subWin){
-	subWin =  window.open('https://glacial-meadow-27403.herokuapp.com/', 'model', 'top=0,left=0,width=975,height=500');
+	subWin =  window.open('https://werid-air.main.jp/work/VirtualReaction/', 'model', 'top=0,left=0,width=975,height=500');
 }
 /**
  * @description controllerウィンドウとmodelウィンドウを閉じる
@@ -24,7 +24,7 @@ var subWin = null;
  Object.defineProperty(win, "ReactionValue", {
     set(v){
         if(subWin != null){
-            subWin.postMessage(v,'https://glacial-meadow-27403.herokuapp.com/');
+            subWin.postMessage(v,'https://werid-air.main.jp/work/VirtualReaction/');
             console.log("ReactionValue set!:"+v);
         }
     }
